@@ -30,6 +30,44 @@ describe User do
     it { should_not be_valid       }
   end
 
+
+
+
+
+
+  describe "email in upcase that is saved to the database" do
+    before do
+      d = @user.dup
+      d.email.upcase!
+      d.save
+    end
+
+    let(:user_email_from_database) { User.find_by_email(@user.email.downcase).email }
+
+    describe "should be downcase" do
+      specify { user_email_from_database.should == @user.email.downcase }
+    end
+  end
+
+  describe "email address with mixed case" do
+    let(:mixed_case_email) { "Foo@ExAMPle.CoM" }
+
+    it "should be saved as all lower-case" do
+      @user.email = mixed_case_email
+      @user.save
+      @user.reload.email.should == mixed_case_email.downcase
+    end
+  end
+
+
+
+
+
+
+
+
+
+
   describe "when email is not present" do
     before { @user.email = " "     }
     it { should_not be_valid       }
