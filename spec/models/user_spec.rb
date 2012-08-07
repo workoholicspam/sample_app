@@ -21,6 +21,7 @@ describe User do
   it { should respond_to(:password_digest)        } #should have attribute user.password_digest
   it { should respond_to(:password)               } #should have attribute user.password
   it { should respond_to(:password_confirmation)  } #should have attribute user.password_confirmation
+  it { should respond_to(:remember_token)         } #should have attribute user.remember_token
   it { should respond_to(:authenticate)           } #should have attribute user.authenticate
 
   it { should be_valid }                            #user.valid? passes all validation required by the model
@@ -143,5 +144,18 @@ describe User do
       it { should_not == user_for_invalid_password }
       specify { user_for_invalid_password.should be_false } #specify is simply a synonym for it, specify is used to allow us to write english "sounding" words
     end
+  end
+
+
+
+
+
+
+
+  describe "remember token" do
+    before { @user.save }
+
+    its(:remember_token) { should_not be_blank}
+    
   end
 end
