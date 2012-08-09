@@ -23,8 +23,10 @@ describe User do
   it { should respond_to(:password_confirmation)  } #should have attribute user.password_confirmation
   it { should respond_to(:remember_token)         } #should have attribute user.remember_token
   it { should respond_to(:authenticate)           } #should have attribute user.authenticate
+  it { should respond_to(:admin)                  } #should have attribute user.admin
 
-  it { should be_valid }                            #user.valid? passes all validation required by the model
+  it { should     be_valid }                        #user.valid? passes all validation required by the model
+  it { should_not be_admin }
 
   describe "when name is not present" do
     before { @user.name = " "      }     
@@ -33,7 +35,14 @@ describe User do
 
 
 
+  describe "with admin attribute set to 'true'" do
+    before do
+      @user.save!
+      @user.toggle!(:admin)
+    end    
 
+    it { should be_admin }
+  end
 
 
   describe "email in upcase that is saved to the database" do

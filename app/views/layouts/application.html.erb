@@ -15,7 +15,9 @@
       <% end %>
       <%= yield %>
       <%= render 'layouts/footer' %>
+      <% params[:CURRENT_USER] = current_user.inspect %>
       <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
 </html>
+ 
