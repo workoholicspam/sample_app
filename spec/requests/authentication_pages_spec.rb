@@ -26,6 +26,8 @@ describe "Authentication" do
       let(:user) { FactoryGirl.create(:user) }
       before { sign_in user }
 
+
+
       it { should have_selector('title', text: user.name) }
       it { should have_link('Profile', href: user_path(user)) }
       it { should have_link('Settings', href: edit_user_path(user))}
@@ -45,8 +47,44 @@ describe "Authentication" do
   end
 
   describe "authorization" do
+    describe "for signed-in users" do
+      let(:user) { FactoryGirl.create(:user) }      
+
+      before { sign_in user }
+
+      describe "signup" do
+        describe "page visit" do
+          before { visit signup_path }
+          it { should have_selector 'h1', text:"Welcome to the Sample App" }
+        end
+
+        describe "form submit" do
+          before { post users_path(user) }
+          specify { response.should redirect_to(root_path) }
+        end
+      end
+    end
+
     describe "for non-signed-in users" do
       let(:user) { FactoryGirl.create(:user) }
+
+
+      describe "when using the navigation bar" do
+
+        describe "the root url" do
+          before { visit root_path }  
+          it { should_not have_link('Settings') }
+          it { should_not have_link('Profile') }
+        end
+
+        describe "the user page" do
+          before { visit user_path(user) }
+          it { should_not have_link('Settings') }
+          it { should_not have_link('Profile') }
+        end
+        
+      end
+
 
       describe "when attempting to visit a protected page" do
         before do
@@ -57,6 +95,18 @@ describe "Authentication" do
         end
 
         describe "after signing in" do
+          describe "after signing out and sign in" do
+            before do
+              click_link 'Sign out'
+              click_link 'Sign in'
+              fill_in "Email",    with: user.email
+              fill_in "Password", with: user.password
+              click_button "Sign in"
+            end
+
+            it {should have_selector('h1', text:user.name)}
+            
+          end
 
           it "should render the desired protected page" do
             page.should have_selector('title', text: 'Edit user')
@@ -98,6 +148,20 @@ describe "Authentication" do
         specify { response.should redirect_to(root_path) }
       end
     end
+
+
+    describe "as admin user" do
+      let(:admin) { FactoryGirl.create(:admin) }
+
+      before do 
+        sign_in admin
+        delete user_path(admin)
+      end
+
+      specify { response.should redirect_to(users_path) }
+    end
+
+
 
     describe "as non-admin user" do
       let(:user)      { FactoryGirl.create(:user) }

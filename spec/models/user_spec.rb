@@ -27,13 +27,17 @@ describe User do
 
   it { should     be_valid }                        #user.valid? passes all validation required by the model
   it { should_not be_admin }
-
+  
+  it "should not allow mass assignment to admin" do
+    expect do
+      User.new(admin: true, name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar") 
+    end.should raise_error(ActiveModel::MassAssignmentSecurity::Error)
+  end
+    
   describe "when name is not present" do
     before { @user.name = " "      }     
     it { should_not be_valid       }
   end
-
-
 
   describe "with admin attribute set to 'true'" do
     before do
@@ -43,6 +47,15 @@ describe User do
 
     it { should be_admin }
   end
+
+
+
+
+
+
+
+
+
 
 
   describe "email in upcase that is saved to the database" do
