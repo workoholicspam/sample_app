@@ -24,10 +24,12 @@ describe User do
   it { should respond_to(:remember_token)         } #should have attribute user.remember_token
   it { should respond_to(:authenticate)           } #should have attribute user.authenticate
   it { should respond_to(:admin)                  } #should have attribute user.admin
+  it { should respond_to(:microposts)             } #should have attribute user.microposts
+  it { should respond_to(:feed)                   } #should have attribute user.feed
 
   it { should     be_valid }                        #user.valid? passes all validation required by the model
   it { should_not be_admin }
-  
+
   it "should not allow mass assignment to admin" do
     expect do
       User.new(admin: true, name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar") 
@@ -168,16 +170,34 @@ describe User do
     end
   end
 
-
-
-
-
-
-
   describe "remember token" do
     before { @user.save }
-
     its(:remember_token) { should_not be_blank}
-    
+  end
+
+  describe "micropost associations" do
+    before { @user.save }
+
+    let!(:older_micropost) { FactoryGirl.create(:micropost, user: @user, created_at: 2.day.ago) }
+    let!(:newer_micropost) { FactoryGirl.create(:micropost, user: @user, created_at: 1.day.ago) }
+
+    its(:microposts){ should == [newer_micropost, older_micropost] }
+
+    it "should destroy associated microposts" do
+      microposts = @user.microposts
+      @user.destroy
+
+      microposts.each do |m|
+        Micropost.find_by_id(m.id).should be_nil
+      end
+    end
+
+    describe "status" do
+      let(:unfollowed_post) { FactoryGirl.create(:micropost, user: FactoryGirl.create(:user)) }
+
+      its(:feed) { should     include(newer_micropost) }
+      its(:feed) { should     include(older_micropost) } 
+      its(:feed) { should_not include(unfollowed_post) }  
+    end
   end
 end
