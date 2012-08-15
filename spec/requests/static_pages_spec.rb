@@ -31,8 +31,16 @@ describe "Static pages" do
         user.feed.each do |item|
           page.should have_selector("li##{item.id}", text: item.content)
         end
+
       end
 
+      describe "side bar" do
+        it "should have correct pluralization of 'micropost'" do
+          page.should have_content('microposts')
+        end
+
+        it { should have_content(user.microposts.count) }
+      end
     end
   end
 
@@ -81,8 +89,5 @@ describe "Static pages" do
 
     click_link 'sample app' #from sign up now click sample app
     page.should have_selector('title', text: full_title(''))
-
-
-
   end
 end
