@@ -32,7 +32,6 @@ class User < ActiveRecord::Base
                                   through:      :reverse_relationships, 
                                   source:       :follower
 
-
   has_secure_password
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

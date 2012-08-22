@@ -1,0 +1,10 @@
+<% content_for :side do %>
+  <section><%= render 'shared/user_info'%></section>
+  <section><%= render 'shared/stats' %></section>
+  <section><%= render 'shared/micropost_form' %></section>
+<% end %>
+
+<% content_for :main do %>
+  <h3>Micropost Feed</h3>
+  <%= render 'microposts/list', micropost: @feed_items, show_user: true %>
+<% end %>

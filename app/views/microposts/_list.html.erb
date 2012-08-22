@@ -1,0 +1,6 @@
+<% show_user ||= false %>
+
+<% if micropost.any? %>
+  <ol class="microposts"><%= render micropost, show_user: show_user %></ol>
+  <%= will_paginate micropost %>
+<% end %>

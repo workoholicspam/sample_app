@@ -81,15 +81,6 @@ describe User do
     end
   end
 
-
-
-
-
-
-
-
-
-
   describe "when email is not present" do
     before { @user.email = " "     }
     it { should_not be_valid       }
@@ -170,6 +161,35 @@ describe User do
   describe "remember token" do
     before { @user.save }
     its(:remember_token) { should_not be_blank}
+  end
+
+  describe "relationship associations" do
+    let(:followed_user_A) { FactoryGirl.create(:user) }
+    let(:followed_user_B) { FactoryGirl.create(:user) }
+    let(:other_user) { FactoryGirl.create(:user) }
+
+    before do 
+      @user.save 
+      @user.follow!(followed_user_A)
+      @user.follow!(followed_user_B)
+      other_user.follow!(followed_user_A)
+      other_user.follow!(followed_user_B)
+    end
+
+    it "should only destroy associated relationships" do
+      relationships_user       = @user.relationships
+      relationships_other_user = other_user.relationships
+
+      @user.destroy
+
+      relationships_user.each do |r|
+        Relationship.find_by_id(r.id).should be_nil
+      end
+
+      relationships_other_user.each do |r|
+        Relationship.find_by_id(r.id).should_not be_nil
+      end
+    end
   end
 
   describe "micropost associations" do

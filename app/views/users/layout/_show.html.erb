@@ -1,0 +1,12 @@
+<% provide(:title, @user.name) %>
+
+<% content_for :side do %>
+  <section><%= render 'shared/user_info', hide_detail: true %></section>
+  <section><%= render 'shared/stats' %></section>
+<% end %>
+
+<% content_for :main do %>
+  <h3>Microposts (<%= @user.microposts.count %>)</h3>
+  <%= render 'follow_form' if signed_in? %>
+  <%= render 'microposts/list', micropost: @microposts %>
+<% end %>

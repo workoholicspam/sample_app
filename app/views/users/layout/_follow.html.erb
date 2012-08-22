@@ -1,0 +1,12 @@
+<% provide(:title, @title) %>
+
+<% content_for :side do %>
+  <section><%= render 'shared/user_info'%></section>
+  <section><%= render 'shared/stats' %></section>
+  <section><%= render 'shared/avatars', users: @users %></section>
+<% end %>
+
+<% content_for :main do %>
+  <h3><%= @title %></h3>
+  <%= render 'users/list' %>
+<% end %>

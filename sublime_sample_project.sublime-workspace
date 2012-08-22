@@ -1,0 +1,523 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"h",
+				"ho	has_one"
+			],
+			[
+				"d",
+				"dob	Insert do |variable| … end"
+			],
+			[
+				"de",
+				"deec	deep_copy(..)"
+			],
+			[
+				"M",
+				"MAXIMUM_VELOCITY"
+			],
+			[
+				"mat",
+				"matchdata"
+			],
+			[
+				"Enum",
+				"Enumerator"
+			],
+			[
+				"Enu",
+				"Enumerator"
+			],
+			[
+				"select",
+				"select_2_10"
+			],
+			[
+				"selectif",
+				"select_if_mul_of_2_10"
+			],
+			[
+				"each_",
+				"each_with_index"
+			],
+			[
+				"initial",
+				"initial_value"
+			],
+			[
+				"a_pu",
+				"a_public_method"
+			],
+			[
+				"symb",
+				"symbols_and_hashes"
+			],
+			[
+				"block",
+				"block_with_each"
+			],
+			[
+				"cod",
+				"code_block_with_iter"
+			],
+			[
+				"yield",
+				"yield_with_code_block"
+			],
+			[
+				"while",
+				"while_loops"
+			],
+			[
+				"hello",
+				"helloworld"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"pcr",
+				"Package Control: Remove Package"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"pcl",
+				"Package Control: List Packages"
+			],
+			[
+				"ssfi ",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"ssfi",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"stack",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"Snippet: ",
+				"Snippet: loop { .. }"
+			],
+			[
+				"fold",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"pc",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 325.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/glenn/Desktop/howto/Ubuntu/how",
+		"/home/glenn/Desktop/rails/1projects/sample_app/app/models/user.rb",
+		"/home/glenn/Desktop/rails/1projects/sample_app/app/views/users/show_follow.html.erb",
+		"/home/glenn/Desktop/howto/sublime/howto:sublime",
+		"/home/glenn/Desktop/rails/1projects/sample_app/db/migrate/20120810172759_create_microposts.rb",
+		"/home/glenn/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/glenn/.config/sublime-text-2/Packages/Rails/form_for-checkbox.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/Rails/%3C%=-Fixtures_identify(%3Asymbol)-%%3E.sublime-snippet",
+		"/home/glenn/Desktop/rails/1projects/sample_app/app/assets/javascripts/application.js",
+		"/home/glenn/.config/sublime-text-2/Packages/User/hello.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/Ruby/060-ruby-if-else.sublime-snippet",
+		"/home/glenn/Desktop/rails/1projects/sample_app/app/controllers/sessions_controller.rb",
+		"/home/glenn/.config/sublime-text-2/Packages/Rails/for-loop-erb.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/PHP/if-a-b;.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/PHP/if(-)-else(-).sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/PHP/if(-).sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/sublime_text_alternative_autocompletion/alternative_autocomplete.py",
+		"/home/glenn/.config/sublime-text-2/Packages/User/README.md",
+		"/home/glenn/Desktop/rails/1projects/sample_app/app/controllers/application_controller.rb",
+		"/home/glenn/Desktop/rails/1projects/sample_app/app/controllers/relationships_controller.rb",
+		"/home/glenn/Desktop/rails/1projects/sample_app/app/models/relationship.rb",
+		"/home/glenn/Desktop/rails/1projects/sample_app/sublime_sample_project.sublime-workspace",
+		"/home/glenn/Desktop/howto/sublime/sublime keyboard shortcuts",
+		"/home/glenn/Desktop/rails/1projects/sample_app/app/helpers/application_helper.rb",
+		"/home/glenn/Desktop/rails/1projects/sample_app/spec/factories.rb",
+		"/home/glenn/Desktop/dropped text.txt",
+		"/home/glenn/Desktop/rails/1projects/sample_app/app/models/micropost.rb",
+		"/home/glenn/Desktop/rails/1projects/sample_app/spec/models/micropost_spec.rb",
+		"/home/glenn/Desktop/rails/1projects/sample_app/app/views/users/show.html.erb",
+		"/home/glenn/Desktop/rails/1projects/sample_app/spec/models/relationship_spec.rb",
+		"/home/glenn/.config/sublime-text-2/Packages/sublime_text_alternative_autocompletion/README.md",
+		"/home/glenn/.config/sublime-text-2/Packages/RailsTutorial/before-end.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/RailsTutorial/hash-pair.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/RailsTutorial/it-description-end.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/RailsTutorial/describe-end.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/RailsTutorial/let-bang.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/RailsTutorial/it-one-line.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/RailsTutorial/let.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/RailsTutorial/its.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/RailsTutorial/README.md",
+		"/home/glenn/.config/sublime-text-2/Packages/RailsTutorial/before-one-line.sublime-snippet",
+		"/home/glenn/.config/sublime-text-2/Packages/DetectSyntax/DetectSyntax.sublime-settings",
+		"/home/glenn/Desktop/rails/1projects/sample_app/spec/models/user_spec.rb",
+		"/home/glenn/.config/sublime-text-2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/glenn/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/glenn/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/glenn/Desktop/sublime keyboard shortcuts",
+		"/home/glenn/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/glenn/Desktop/Sublime Text 2/PackageSetup.py",
+		"/usr/lib/subl/PackageSetup.py",
+		"/home/glenn/Desktop/rails/ruby.railstutorial.org",
+		"/home/glenn/Desktop/chrome scroll.txt",
+		"/home/glenn/Desktop/REST",
+		"/usr/share/applications/google-chrome.desktop",
+		"/home/glenn/Desktop/passwords",
+		"/home/glenn/.config/sublime-text-2/Packages/Theme - Default/Widget.sublime-settings",
+		"/home/glenn/.config/sublime-text-2/Packages/User/RubyTest.last-run",
+		"/home/glenn/Desktop/rails/1projects/sample_app/app/controllers/static_pages_controller.rb",
+		"/home/glenn/Desktop/rails/1projects/sample_app/spec/requests/static_pages_spec.rb",
+		"/home/glenn/Desktop/rails/1projects/sample_app/spec/spec_helper.rb",
+		"/home/glenn/Desktop/rails/1projects/sample_app/Guardfile",
+		"/home/glenn/.config/sublime-text-2/Packages/User/RubyTest.sublime-settings",
+		"/home/glenn/Desktop/rails/1projects/sublime-text-haml-sass/README.txt",
+		"/home/glenn/.rvm/hooks/after_cd_bundler",
+		"/home/glenn/Desktop/rails/1projects/sample_app/config/database.yml",
+		"/etc/postgresql/8.4/main/postgresql.conf",
+		"/home/glenn/Desktop/rails/1projects/sample_app/README.md",
+		"/home/glenn/Desktop/rails/1projects/demo_app/config/routes.rb",
+		"/home/glenn/Desktop/rails/1projects/demo_app/Gemfile",
+		"/home/glenn/Desktop/rails/1projects/demo_app/app/controllers/users_controller.rb",
+		"/home/glenn/Desktop/rails/1projects/demo_app/README.md",
+		"/home/glenn/Desktop/rails/1projects/first_app/README.md",
+		"/home/glenn/Desktop/rails/notes",
+		"/home/glenn/Desktop/howto/git/git:how",
+		"/home/glenn/Desktop/howto/rails/rails:howto",
+		"/home/glenn/Desktop/howto/heroku/heroku:how",
+		"/home/glenn/Desktop/rails/1projects/first_app/Gemfile",
+		"/home/glenn/Desktop/rails/1projects/first_app/.gitignore",
+		"/home/glenn/Desktop/rails/1projects/Gemfile",
+		"/home/glenn/Desktop/rails/first_app/Gemfile",
+		"/home/glenn/Desktop/rails/first_app/README.md",
+		"/home/glenn/Desktop/rails/first_app/.gitignore",
+		"/home/glenn/Desktop/rails/demo_app/Gemfile",
+		"/home/glenn/Desktop/ruby/code/ch06/2_other.rb",
+		"/home/glenn/Desktop/ruby/code/ch06/3_regex.rb",
+		"/home/glenn/Desktop/ruby/code/ch10/3-creating-custom-exceptions.rb",
+		"/home/glenn/Desktop/ruby/code/ch10/2-raising-exceptions.rb",
+		"/home/glenn/Desktop/ruby/code/ch10/2",
+		"/home/glenn/Desktop/ruby/code/ch10/1-exceptions.rb",
+		"/home/glenn/Desktop/ruby/code/ch10/exceptions.rb",
+		"/home/glenn/Desktop/ruby/code/ch10/fetch_web_page-example/fetch1.rb",
+		"/home/glenn/Desktop/ruby/code/ch10/fetch_web_page-example/fetch2.rb",
+		"/home/glenn/Desktop/ruby/code/ch09/2-operator-overriding.rb",
+		"/home/glenn/Desktop/ruby/code/ch09/3-miscellaneous-operations.rb",
+		"/home/glenn/Desktop/ruby/code/ch09/3-miscellaneous-operations",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch09/1-expressions.rb",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch03/objects.rb",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch08/1-methods.rb",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch08/1-methods",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch05/4_module_include_mixins.rb",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch05/4_module_include.rb",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch07/splat.rb",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch02/basics.rb",
+		"/home/glenn/Desktop/ruby/1 code/regex/how:regex",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch06/3_regex.rb",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch06/2_other.rb",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch06/3_regex",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch06/parsing-file-example/read_songdata_2.rb",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch06/parsing-file-example/songdata",
+		"/home/glenn/Desktop/ruby/1 code/regex/how",
+		"/home/glenn/Desktop/ruby/1 code/book_programming-ruby-pragmatic/ch06/1_ch06.rb",
+		"/home/glenn/Desktop/ruby/notes",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch02/basics.rb",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch06/1_ch06.rb",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch05/5_inheritance_how_it_works_with_class_vars.rb",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch05/Untitled Document",
+		"/home/glenn/Desktop/ruby/1 code/benchmark_1",
+		"/home/glenn/Desktop/ruby/1 code/benchmark.rb",
+		"/home/glenn/Desktop/ruby/1 code/benchmark1",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch05/3_enumerable.rb",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch05/4_module_include.rb",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch05/2_comparable.rb",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch05/2_modules.rb",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch05/ch05.rb",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch04/hashes.rb",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch03/objects.rb",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch04/arrays.rb",
+		"/home/glenn/Desktop/ruby/1 code/programming_ruby_pragmatic/ch04/blocks.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"          ",
+			"\"], \"command\": ",
+			"\"panel\": ",
+			"\"], \"command\": \"show_panel\", \"args\": {",
+			"\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"",
+			"{ \"keys\": [\"",
+			"length",
+			"snippet",
+			"ctrl+1",
+			"Ctrl+0",
+			"ctrl+u",
+			"lo",
+			"as",
+			"follower",
+			"source",
+			"through",
+			"source",
+			"be_valid",
+			"ctrl",
+			"backspace",
+			"relationship",
+			"describe",
+			"section",
+			"sublimelinter_executable_map",
+			"alt+r",
+			"reverse",
+			"tab",
+			"margin",
+			"font",
+			"ctrl+shift+backspace",
+			"ctrl+shift",
+			"command",
+			"ctrl",
+			"command",
+			"keys",
+			"move",
+			"queries",
+			"...,",
+			"sessions_controller.rb",
+			"heroku",
+			"version",
+			"check",
+			"chapter 3",
+			"validates :password",
+			"has_secure_password",
+			"  it { should respond_to(:password_confirmation) }",
+			"$ bundle exec rake db:migrate",
+			"bundle exec rake db:migrate",
+			".\n",
+			"brance",
+			"chapter 3 -",
+			"rename",
+			"sql",
+			"install",
+			"bundle",
+			"=====Content-begin==============================================\n=====Content-end================================================",
+			"rails generate",
+			"create you",
+			"start",
+			"git",
+			"$",
+			"/",
+			" ",
+			",",
+			"k",
+			"proc1",
+			"MyStoredProc",
+			"block_getNexValue",
+			"get_my_special_enum",
+			"enum_h",
+			"enum_a",
+			"b_sugar",
+			"	",
+			"\n",
+			"-----------------------------------------------------------------\n",
+			"make"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"                                                                                                                                  ",
+			"                    ",
+			"    ",
+			"",
+			"^",
+			"",
+			"proc",
+			"get_generator",
+			"enum_hash",
+			"enum_list",
+			"  "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.tests":
+	{
+		"height": 130.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 154.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"show",
+				"app/views/users/show_follow.html.erb"
+			],
+			[
+				"migrate",
+				"db/migrate/20120810172759_create_microposts.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"model",
+				"app/models/relationship.rb"
+			],
+			[
+				".html.erb",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"relation",
+				"app/models/relationship.rb"
+			],
+			[
+				"spec",
+				"spec/models/relationship_spec.rb"
+			],
+			[
+				"us",
+				"spec/models/user_spec.rb"
+			],
+			[
+				"user.rb",
+				"app/models/user.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/glenn/Desktop/rails/1projects/sample_app/sublime_sample_project.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 295.0,
+	"status_bar_visible": true
+}
