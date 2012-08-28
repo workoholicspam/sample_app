@@ -12,7 +12,7 @@
 require 'spec_helper'
 
 describe User do
-  before { @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar") }
+  before { @user = User.new(name: "ExampleUser", email: "user@example.com", password: "foobar", password_confirmation: "foobar") }
 
   subject { @user }
 
@@ -111,10 +111,34 @@ describe User do
     end
   end
 
+  describe "when user name format" do
+    it "should be valid" do
+      @user.name = "ValidExample"
+      should be_valid 
+    end
+
+    it "should be invalid" do
+      @user.name = "Invalid Example"
+      should_not be_valid
+    end
+  end
+
+  describe "when username is already taken" do
+    before do
+      user_with_same_name       = @user.dup
+      user_with_same_name.name  = @user.name.upcase
+      user_with_same_name.email = "random@mail.com"
+      user_with_same_name.save
+    end
+
+    it { should_not be_valid }
+  end
+
   describe "when email address is already taken" do
     before do
       user_with_same_email        = @user.dup
       user_with_same_email.email  = @user.email.upcase
+      user_with_same_email.name   = "random"
       user_with_same_email.save
     end
 

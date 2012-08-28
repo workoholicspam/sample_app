@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120815180916) do
+ActiveRecord::Schema.define(:version => 20120823215834) do
+
+  create_table "mentions", :force => true do |t|
+    t.integer  "mention_user_id"
+    t.integer  "micropost_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "mentions", ["mention_user_id", "micropost_id"], :name => "index_mentions_on_mention_user_id_and_micropost_id", :unique => true
+  add_index "mentions", ["micropost_id"], :name => "index_mentions_on_micropost_id"
 
   create_table "microposts", :force => true do |t|
     t.string   "content"

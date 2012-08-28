@@ -8,5 +8,5 @@
 <% content_for :main do %>
   <h3>Microposts (<%= @user.microposts.count %>)</h3>
   <%= render 'follow_form' if signed_in? %>
-  <%= render 'microposts/list', micropost: @microposts %>
+  <%= render 'microposts/list', microposts: @microposts %>
 <% end %>
